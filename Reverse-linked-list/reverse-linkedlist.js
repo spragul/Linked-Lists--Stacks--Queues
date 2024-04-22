@@ -18,7 +18,6 @@ function reverse(head) {
    let rest = reverse(head.next);
    head.next.next = head;
 
-   /* tricky step -- see the diagram */
    head.next = null;
 
    /* fix the head pointer */
