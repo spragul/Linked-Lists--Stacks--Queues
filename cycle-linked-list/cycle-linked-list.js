@@ -1,7 +1,7 @@
 // Write a function to check if a linked list contains a cycle.
 
 
-var head; // head of list
+let head; // head of list
 
 /* Linked list Node */
 class Node {
@@ -15,7 +15,7 @@ class Node {
     /*
      * 1 & 2: Allocate the Node & Put in the data
      */
-var new_node = new Node(new_data);
+let new_node = new Node(new_data);
 
     /* 3. Make next of new Node as head */
     new_node.next = head;
@@ -27,7 +27,7 @@ var new_node = new Node(new_data);
 // Returns true if there is a loop in linked
 // list else returns false.
 function detectLoop(h) {
-    var s = new Set();
+    let s = new Set();
     while (h != null) {
         // If we have already has this node
         // in hashmap it means there is a cycle
